@@ -1,6 +1,7 @@
 let clickCounter = 1;
 $(".troubleshooter").hide();
 $(".fullProgress").hide();
+$(".pyro").hide();
 $(".b2").click(()=>{
     $(".warning").hide();
 
@@ -64,5 +65,13 @@ $(".b4").click(() =>{
     $(".warning").show();
     clickCounter += 1;
     console.log(clickCounter);
+    }
+    
+    if(clickCounter === 4){
+        $(".b2").click(()=>{
+            $("body").addClass("fireworks");
+            $(".pyro").show();
+            $(".troubleshooter").hide();
+        })
     }
 });
