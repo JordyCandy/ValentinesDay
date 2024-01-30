@@ -1,12 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 body{
-    background-color: #45000c;
+    margin: 0 auto;
+}
+
+.newBody{
+    background-color: #701711;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.warning{
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    font-family: 'Yellowtail', cursive;
+}
+
+.navbar{
+    padding: 0 3%;
+    margin: 0;
+    font-family: 'Yellowtail', cursive;
+}
+
+.navImg{
+    width: 20%;
+}
+
+.coverImg{
+    width: 250px;
+    height: 400px;
+    margin-bottom: 15%;
+}
+
+.coverDiv{
+    margin: 2%;
+    padding: 2% 2% 8% 2%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.cover{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.warning, .warning1{
     background-color: #c9c6c6;
     width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
 }
 
 .upper{
@@ -37,7 +89,7 @@ body{
 /*Progress bar*/
 
 #myProgress {
-    width: 40%;
+    width: 100%;
     background-color: grey;
   }
   
@@ -47,10 +99,27 @@ body{
     background-color: pink;
   }
 
+  .fullProgress{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+  }
+
+  .btn{
+    margin-top: 2%;
+    padding: 1.5%;
+    align-self: flex-end;
+  }
   /*Troubleshooter*/
   .troubleshooter{
     background-color: #c9c6c6;
     width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
 }
 
   .mid1{
@@ -78,6 +147,7 @@ body{
   @media (max-width: 768px){
     .warning, .troubleshooter{
         width: 100%;
+        position: static;
     }
   }
 
