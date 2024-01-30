@@ -75,3 +75,7 @@ $(".b4").click(() =>{
         })
     }
 });
+
+$(".b3").click(() =>{
+    alert("There's no getting out of this 😈");
+});
