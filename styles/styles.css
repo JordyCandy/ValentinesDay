@@ -2,6 +2,7 @@
 
 body{
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .newBody{
@@ -28,7 +29,7 @@ body{
 }
 
 .coverImg{
-    width: 250px;
+    width: 90%;
     height: 400px;
     margin-bottom: 15%;
 }
@@ -148,6 +149,36 @@ body{
     .warning, .troubleshooter{
         width: 100%;
         position: static;
+    }
+
+    .coverImg{
+        width: 70%;
+    }
+
+    .coverDiv{
+        width: 50%;
+        height: 40%;
+    }
+
+    .title{
+        font-size: 0.9rem;
+    }
+
+    .pricing{
+        font-size: 0.7rem;
+    }
+
+    .navbar-brand{
+        font-size: 0.8rem;
+        width: 50%;
+    }
+
+    .navbar-toggler-icon{
+        font-size: 0.8rem;
+    }
+
+    .navImg{
+        width: 20%;
     }
   }
 
