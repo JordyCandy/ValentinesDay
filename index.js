@@ -79,3 +79,14 @@ $(".b4").click(() =>{
 $(".b3").click(() =>{
     alert("There's no getting out of this 😈");
 });
+
+$(".b1").click(()=>{
+    setTimeout(()=>{
+        $(".warning").hide();
+    });
+
+    setTimeout(() =>{
+        $(".warning").show();
+        alert("Sike!")
+    }, 1500);
+});
