@@ -9,7 +9,7 @@ $(".imgClass").hide();
 // $(".navbar").hide();
 // $("body").addClass("newBody");
 
-$(document).one("click", () => {
+$(document).one("click touchstart", () => {
     setTimeout(() => {
         $("body").addClass("newBody");
         $(".cover").hide();
