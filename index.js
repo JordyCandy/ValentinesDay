@@ -86,3 +86,20 @@ $(".b2").click(() =>{
             break;
     }
 });
+
+$(".b1").click(() =>{
+ switch(clickCounter){
+    case 0:
+        alert("No sir.");
+        break;
+    
+    case 1:
+        alert("Dude fr no.");
+        break;
+
+    case 2:
+        alert("You know what? No exit privileges for you");
+        $(".b1").hide();
+        break;
+ }
+});
