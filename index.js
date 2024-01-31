@@ -2,14 +2,24 @@ $(".troubleshooter").hide();
 $(".warning").hide();
 $(".fullProgress").hide();
 $(".pyro").hide();
+$(".imgClass").hide();
+
+//Tem hide
+// $(".cover").hide();
+// $(".navbar").hide();
+// $("body").addClass("newBody");
 
 $(document).one("click", () => {
     setTimeout(() => {
         $("body").addClass("newBody");
-        $(".warning").show();
         $(".cover").hide();
         $(".navbar").hide();
-    }, 2000);
+        imgShow();
+    }, 2400);
+
+    setTimeout(() =>{
+        $(".warning").show();
+    }, 2600);
 });
 
 $(".btn").click(() =>{
@@ -86,6 +96,7 @@ $(".b2").click(() =>{
             $(".pyro").show();
             $("body").addClass("fireworks");
             $(".warning").hide();
+            $(".imgDiv").hide();
             break;
     }
 });
@@ -118,11 +129,48 @@ $(".b3").click(()=>{
             alert("Damn okay.");
             setTimeout(() =>{
                 $(".warning").hide();
+                $(".cover").show();
+                $(".navbar").show();
+                $("body").removeClass("newBody");
             }, 100);
             setTimeout(() =>{
                 alert("Sike");
                 $(".warning").show();
                 $(".b3").hide();
+                $(".cover").hide();
+                $(".navbar").hide();
+                $("body").addClass("newBody");
             }, 2000);
     }
 });
+
+function imgShow(){
+    setTimeout(()=>{
+        $(".c1").show();
+        $(".c14").show();
+    }, 500);
+    setTimeout(()=>{
+        $(".c2").show();
+        $(".c13").show();
+    }, 1000);
+    setTimeout(()=>{
+        $(".c3").show();
+        $(".c12").show();
+    }, 1800);
+    setTimeout(()=>{
+        $(".c4").show();
+        $(".c11").show();
+    }, 2100);
+    setTimeout(()=>{
+        $(".c5").show();
+        $(".c10").show();
+    }, 2150);
+    setTimeout(()=>{
+        $(".c6").show();
+        $(".c9").show();
+    }, 300);
+    setTimeout(()=>{
+        $(".c7").show();
+        $(".c8").show();
+    }, 2200);
+}

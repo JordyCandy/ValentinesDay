@@ -395,3 +395,85 @@ body{
       margin-top: 30%;
       margin-left: 80%; } }
   
+  .c1{
+    position: absolute;
+    width: 13%;
+    height: 32%;
+    top: 1%;
+    left: 20%;
+  }
+
+  .c3{
+    position: absolute;
+    width: 15%;
+  }
+
+  .c4{
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+  }
+
+  .c5{
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+  }
+  .c6{
+    position: absolute;
+    width: 15%;
+    right: 0;
+    top: 5%;
+  }
+
+  .c7{
+    position: absolute;
+    width: 15%;
+    left: 0;
+  }
+
+  .c8{
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    right: 15%;
+  }
+
+  .c9{
+    position: absolute;
+    width: 20%;
+    left: 25%;
+    top: 35%;
+  }
+
+  .c10{
+    position: absolute;
+    width: 25%;
+    right: 1%;
+    bottom: 2%;
+  }
+
+  .c11{
+    position: absolute;
+    width: 25%;
+    right: 15%;
+  }
+  .c12{
+    position: absolute;
+    width: 23%;
+    right: 27%;
+  }
+
+  .c13{
+    position: absolute;
+    width: 20%;
+    right: 0;
+    top: 40%;
+  }
+
+  .c14{
+    position: absolute;
+    width: 15%;
+    top: 40%;
+    left: 45%;
+  }
