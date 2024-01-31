@@ -9,6 +9,8 @@ body{
     background-color: #701711;
     margin: 0 auto;
     overflow: hidden;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .navbar-brand{
@@ -54,12 +56,13 @@ body{
     justify-content: center;
 }
 
-.warning, .warning1{
+.warning{
     background-color: #c9c6c6;
     width: 30%;
     position: absolute;
     left: 35%;
     top: 35%;
+    z-index: 2;
 }
 
 .upper{
@@ -159,7 +162,12 @@ body{
   @media (max-width: 767px){
     .warning, .troubleshooter{
         width: 100%;
-        position: static;
+        position: absolute;
+        left: 0;
+    }
+
+    .fullProgress{
+      z-index: 1;
     }
 
     .coverImg{
@@ -193,6 +201,33 @@ body{
     .navImg{
         width: 20%;
         height: 10%;
+    }
+
+    .cover > img{
+      width: 100%;
+    }
+
+    .imgDiv{
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .c1{
+      object-fit: cover;
+      width: auto;
+      display: none;
+    }
+
+    .c2{
+      width: 60%;
+    }
+
+    .c3{
+      width: inherit;
+    }
+
+    .c7{
+      width: initial;
     }
   }
 
@@ -397,7 +432,7 @@ body{
   
   .c1{
     position: absolute;
-    width: 13%;
+    width: 140px;
     height: 32%;
     top: 1%;
     left: 20%;
@@ -405,13 +440,13 @@ body{
 
   .c3{
     position: absolute;
-    width: 15%;
+    width: 180px;
   }
 
   .c4{
     position: absolute;
     bottom: 0;
-    width: 25%;
+    width: 280px;
   }
 
   .c5{
@@ -421,41 +456,41 @@ body{
   }
   .c6{
     position: absolute;
-    width: 15%;
+    width: 180px;
     right: 0;
     top: 5%;
   }
 
   .c7{
     position: absolute;
-    width: 15%;
+    width: 180px;
     left: 0;
   }
 
   .c8{
     position: absolute;
-    width: 25%;
+    width: 280px;
     bottom: 0;
     right: 15%;
   }
 
   .c9{
     position: absolute;
-    width: 20%;
+    width: 220px;
     left: 25%;
     top: 35%;
   }
 
   .c10{
     position: absolute;
-    width: 25%;
+    width: 280px;
     right: 1%;
     bottom: 2%;
   }
 
   .c11{
     position: absolute;
-    width: 25%;
+    width: 220px;
     right: 15%;
   }
   .c12{

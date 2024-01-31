@@ -4,7 +4,7 @@ $(".fullProgress").hide();
 $(".pyro").hide();
 $(".imgClass").hide();
 
-//Tem hide
+// Tem hide
 // $(".cover").hide();
 // $(".navbar").hide();
 // $("body").addClass("newBody");
