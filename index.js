@@ -69,6 +69,7 @@ $(".b2").click(() =>{
             setTimeout(()=>{
                 $(".li3").hide();
             }, 1500);
+            $(".b3").show();
             break;
 
         case 3:
@@ -86,6 +87,7 @@ $(".b2").click(() =>{
                 $(".header").text("Will you be my valentine?");
             }, 2000);
             $(".info").text("I will be the best valentine ever!");
+            $(".b3").show();
             break;
 
         case 5:
@@ -114,6 +116,10 @@ $(".b1").click(() =>{
         alert("You know what? No exit privileges for you");
         $(".b1").hide();
         break;
+
+    default:
+        alert("I really can't trust you with that button");
+        $(".b1").hide();
  }
 });
 
@@ -128,6 +134,7 @@ $(".b3").click(()=>{
                 $(".cover").show();
                 $(".navbar").show();
                 $("body").removeClass("newBody");
+                $(".imgDiv").hide();
             }, 100);
             setTimeout(() =>{
                 alert("Sike");
@@ -136,7 +143,23 @@ $(".b3").click(()=>{
                 $(".cover").hide();
                 $(".navbar").hide();
                 $("body").addClass("newBody");
+                $(".imgDiv").show();
             }, 2000);
+            break;
+
+        case 2:
+            $(".b3").hide();
+            alert("This is a trick question Ma'am 🧍🏻‍♀️");
+            break;
+
+        case 3:
+            $(".b3").hide();
+            alert("You thought.");
+            break;
+
+        default:
+            alert("Bruh STAHP");
+            break;
     }
 });
 
@@ -152,7 +175,7 @@ function imgShow(){
     setTimeout(()=>{
         $(".c3").show();
         $(".c12").show();
-    }, 1800);
+    }, 1900);
     setTimeout(()=>{
         $(".c4").show();
         $(".c11").show();
@@ -160,7 +183,7 @@ function imgShow(){
     setTimeout(()=>{
         $(".c5").show();
         $(".c10").show();
-    }, 2150);
+    }, 2500);
     setTimeout(()=>{
         $(".c6").show();
         $(".c9").show();
@@ -168,9 +191,9 @@ function imgShow(){
     setTimeout(()=>{
         $(".c7").show();
         $(".c8").show();
-    }, 2200);
+    }, 2800);
 
     setTimeout(() =>{
         $(".warning").show();
-    }, 2800);
+    }, 4000);
 }
