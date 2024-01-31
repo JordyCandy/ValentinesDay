@@ -75,7 +75,10 @@ $(".b2").click(() =>{
 
         case 4:
             $(".warningInfo").text("Pretty Please <3");
-            $(".header").text("Will you be my valentine?");
+            $(".header").text("Will you be my victim?");
+            setTimeout(() =>{
+                $(".header").text("Will you be my valentine?");
+            }, 2000);
             $(".info").text("I will be the best valentine ever!");
             break;
 
@@ -87,8 +90,11 @@ $(".b2").click(() =>{
     }
 });
 
+let counter1 = 0
+
 $(".b1").click(() =>{
- switch(clickCounter){
+    counter1 +=1;
+ switch(counter1){
     case 0:
         alert("No sir.");
         break;
@@ -102,4 +108,21 @@ $(".b1").click(() =>{
         $(".b1").hide();
         break;
  }
+});
+
+let counter2 = 0;
+$(".b3").click(()=>{
+    counter2 += 1;
+    switch(counter2){
+        case 1:
+            alert("Damn okay.");
+            setTimeout(() =>{
+                $(".warning").hide();
+            }, 100);
+            setTimeout(() =>{
+                alert("Sike");
+                $(".warning").show();
+                $(".b3").hide();
+            }, 2000);
+    }
 });
