@@ -16,10 +16,6 @@ $(document).one("click", () => {
         $(".navbar").hide();
         imgShow();
     }, 2400);
-
-    setTimeout(() =>{
-        $(".warning").show();
-    }, 2600);
 });
 
 $(".btn").click(() =>{
@@ -78,7 +74,7 @@ $(".b2").click(() =>{
         case 3:
             $(".warning").show();
             $(".troubleshooter").hide();
-            $(".warningInfo").text("sorry");
+            $(".warningInfo").text("Sorry");
             $(".header").text("One last thing");
             $(".info").text("I swear");
             break;
@@ -173,4 +169,8 @@ function imgShow(){
         $(".c7").show();
         $(".c8").show();
     }, 2200);
+
+    setTimeout(() =>{
+        $(".warning").show();
+    }, 2800);
 }
