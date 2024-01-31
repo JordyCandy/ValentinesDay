@@ -166,6 +166,12 @@ body{
         left: 0;
     }
 
+    .positional{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .fullProgress{
       z-index: 1;
     }

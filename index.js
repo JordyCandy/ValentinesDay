@@ -193,7 +193,7 @@ function imgShow(){
         $(".c8").show();
     }, 2800);
 
-    setTimeout(() =>{
-        $(".warning").show();
-    }, 4000);
+    // setTimeout(() =>{
+    //     $(".warning").show();
+    // }, 4000);
 }
