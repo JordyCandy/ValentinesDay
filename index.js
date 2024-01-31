@@ -106,15 +106,15 @@ let counter1 = 0
 $(".b1").click(() =>{
     counter1 +=1;
  switch(counter1){
-    case 0:
+    case 1:
         alert("No sir.");
         break;
     
-    case 1:
+    case 2:
         alert("Dude fr no.");
         break;
 
-    case 2:
+    case 3:
         alert("You know what? No exit privileges for you");
         $(".b1").hide();
         break;
