@@ -38,7 +38,7 @@ $(".b2").click(() =>{
                     $(".header").text("Will you be my victim?");
                     setTimeout(() =>{
                         $(".header").text("Will you be my valentine?");
-                    }, 2000);
+                    }, 1000);
                     $(".info").text("I will be the best valentine ever!");
                     $(".b3").show();
                     break;
@@ -134,3 +134,66 @@ function move() {
     }
   }
   
+  let clicker1 = 0;
+  $(".b1").click(() =>{
+    clicker1 += 1;
+
+    switch(clicker1){
+        case 1:
+            alert("No sir.");
+            break;
+
+        case 2:
+            alert("Dude fr no.");
+            break;
+
+        case 3:
+           alert("You know what? No exit privileges for you.");
+           $(".b1").hide();
+           break;
+           
+        default:
+            alert("I really can't trust you with this, can I?");
+            $(".b1").hide();
+    }
+  });
+
+  let counter2 = 0;
+$(".b3").click(()=>{
+    counter2 += 1;
+    switch(counter2){
+        case 1:
+            alert("Damn okay.");
+            setTimeout(() =>{
+                $(".warning").hide();
+                $(".cover").show();
+                $(".navbar").show();
+                $("body").removeClass("newBody");
+                $(".imgDiv").hide();
+            }, 100);
+            setTimeout(() =>{
+                alert("Sike");
+                $(".warning").show();
+                $(".b3").hide();
+                $(".cover").hide();
+                $(".navbar").hide();
+                $("body").addClass("newBody");
+                $(".imgDiv").show();
+            }, 2000);
+            break;
+
+        case 2:
+            $(".b3").hide();
+            alert("This is a trick question Ma'am 🧍🏻‍♀️");
+            break;
+
+        case 3:
+            $(".b3").hide();
+            alert("You thought.");
+            break;
+
+        default:
+            alert("Bruh STAHP");
+            break;
+    }
+});
